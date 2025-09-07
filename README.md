@@ -27,7 +27,7 @@ Berisi pengalaman kerja, proyek, dan informasi kontak saya sebagai **Data Scient
 
 ## ✨ Demo
 
-🔗 **Live Site** → [https://nurdiansyah.vercel.app](https://nurdiansyah.vercel.app)
+🔗 **Live Site** → [https://nurdiansyah.vercel.app](https://cv-nurdiansyah.vercel.app/)
 
 ---
 
