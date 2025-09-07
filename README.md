@@ -1,35 +1,35 @@
-# AstroZen - Personal Portfolio Website
+# 🌐 CV & Portfolio — NURDIANSYAH
 
-AstroZen is a minimalist, accessible and responsive portfolio template for your personal portfolio website. It is built with Astro and TailwindCSS.
+Ini adalah website CV & personal portfolio saya yang dibangun menggunakan **Astro** dan **TailwindCSS**.  
+Berisi pengalaman kerja, proyek, dan informasi kontak saya sebagai **Data Scientist & Software Engineer**.
 
-![zen-og](https://github.com/user-attachments/assets/7a72aaae-6652-4cd0-becc-8e6a3c224993)
+![preview](public/zen-og.png)
 
-> [!NOTE]
-> The information contained in this template, including names, images, and content, is entirely fictitious and is intended solely to give the design a realistic appearance. Any coincidence with real-life people, events, or situations is purely coincidental. It is recommended that you replace this information with your own information.
+> [!NOTE]  
+> Semua informasi, gambar, dan konten pada repositori ini adalah milik saya pribadi dan digunakan sebagai portfolio.  
+
+---
 
 ## 🔥 Features
 
-- [x] Minimalist design. clean and simple
-- [x] Mobile-first responsive layout
-- [x] SEO-friendly and accessible
-- [x] Easy to customize with a single configuration file
+- [x] Desain clean & profesional  
+- [x] Responsive (desktop & mobile)  
+- [x] SEO-friendly dan accessible  
+- [x] Konfigurasi mudah via file `src/config/index.ts`  
+- [x] Deploy cepat ke **Vercel** / **Netlify**  
 
-## ✅ Lighthouse Score
+---
 
-![performance](https://github.com/user-attachments/assets/4f95e2ca-03f9-4996-9e34-dcd179194c58)
+## ✨ Demo
+
+🔗 **Live Site** → [https://nurdiansyah.vercel.app](https://nurdiansyah.vercel.app)
+
+---
 
 ## 🚀 Getting Started
 
-Clone this repository to your local machine using Git.
+Clone repo ini ke lokal:
 
-```scheme
-git clone https://github.com/immois/astro-zen.git
-cd astro-zen
-```
-
-| Command        | Action                                       |
-| :------------- | :------------------------------------------- |
-| `pnpm install` | Installs dependencies                        |
-| `pnpm dev`     | Starts local dev server at `localhost:4321`  |
-| `pnpm build`   | Build your production site to `./dist/`      |
-| `pnpm preview` | Preview your build locally, before deploying |
+```bash
+git clone https://github.com/Nurdiansyah0/Cv_Nurdiansyah.git
+cd Cv_Nurdiansyah
