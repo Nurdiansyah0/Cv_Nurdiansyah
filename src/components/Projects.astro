@@ -3,10 +3,7 @@ import Section from "./Section.astro";
 import { Image } from "astro:assets";
 import type { ProjectProps } from "@types";
 
-interface Props {
-  projects: ProjectProps[];
-}
-
+interface Props { projects: ProjectProps[]; }
 const { projects } = Astro.props;
 ---
 
@@ -19,36 +16,48 @@ const { projects } = Astro.props;
           style={`top: ${top}px;`}
           class="sticky mb-12 rounded-2xl border border-neutral/20 bg-black"
         >
-          <div class="bg-difu relative z-[1] grid h-[580px] w-full grid-rows-2 rounded-2xl bg-[#1c232d]/85 before:absolute before:inset-0 before:z-[-1] before:rounded-2xl before:bg-[url(/raja.png)] before:bg-[length:128px] before:bg-repeat before:opacity-[5%] before:content-[''] sm:grid-cols-2 sm:grid-rows-1 md:h-96">
+          {/* ❗ grid TANPA aspect di sini */}
+          <div
+            class="bg-difu relative z-[1] grid w-full rounded-2xl
+                   bg-[#1c232d]/85 before:absolute before:inset-0 before:z-[-1]
+                   before:rounded-2xl before:bg-[url(/raja.png)] before:bg-[length:128px]
+                   before:bg-repeat before:opacity-[5%] before:content-['']
+                   sm:grid-cols-2 sm:grid-rows-1"
+          >
+            {/* kolom teks */}
             <div class="px-6 pt-12">
               <h3 class="mb-5 font-serif text-3xl font-medium text-primary">
                 {name}
               </h3>
               <p class="text-base text-neutral">{summary}</p>
               <div class="flex gap-5 pt-10 text-white">
-                <a
-                  href={linkSource}
-                  target="_blank"
-                  class="after:relative after:bottom-[-5px] after:content-[url(/external.svg)] hover:underline"
-                >
+                <a href={linkSource} target="_blank"
+                   class="after:relative after:bottom-[-5px] after:content-[url(/external.svg)] hover:underline">
                   Source
                 </a>
-                <a
-                  href={linkPreview}
-                  target="_blank"
-                  class="after:relative after:bottom-[-5px] after:content-[url(/external.svg)] hover:underline"
-                >
+                <a href={linkPreview} target="_blank"
+                   class="after:relative after:bottom-[-5px] after:content-[url(/external.svg)] hover:underline">
                   Preview
                 </a>
               </div>
             </div>
-            <div class="flex items-end justify-end overflow-hidden">
+
+            {/* kolom gambar */}
+            <div
+              class="min-h-0 flex items-center justify-center overflow-hidden
+                     /* mobile: pakai aspek 16:9 */
+                     aspect-[16/9]
+                     /* di sm+: hilangkan aspect, biar ikut tinggi kolom */
+                     sm:aspect-auto sm:h-full"
+            >
               <Image
-                class="h-full w-[95%] rounded-ss-xl rounded-ee-2xl object-none object-left-top sm:h-[85%] sm:w-full"
+                class="h-full w-full object-contain bg-black rounded-ss-xl rounded-ee-2xl"
                 src={image}
                 alt={name}
-                width="736"
-                height="483"
+                width={1280}
+                height={720}
+                loading="lazy"
+                decoding="async"
               />
             </div>
           </div>
