@@ -14,7 +14,7 @@ export const SITE_CONFIG: SiteConfig = {
   ],
   socialLinks: [
     { text: "Github", href: "https://github.com/nurdiansyah0" },
-    { text: "LinkedIn", href: "www.linkedin.com/in/nurdiansyah-nurdiansyah-84500a17b" },
+    { text: "LinkedIn", href: "https://linkedin.com/in/nurdiansyah-ds" },
     { text: "Twitter", href: "https://x.com/Diansyh2"},
     { text: "Youtube", href: "https://www.youtube.com/@Bitzens" },
   ],
