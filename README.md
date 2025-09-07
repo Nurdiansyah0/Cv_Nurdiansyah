@@ -1,4 +1,9 @@
-# 🌐 CV & Portfolio — NURDIANSYAH
+# 🌐 CV & Portfolio — NURDIANSYAH  
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+![Astro](https://img.shields.io/badge/Astro-5.0-orange)
+![TailwindCSS](https://img.shields.io/badge/TailwindCSS-4.0-blue)
+![Build](https://img.shields.io/badge/Build-Passing-brightgreen)
 
 Ini adalah website CV & personal portfolio saya yang dibangun menggunakan **Astro** dan **TailwindCSS**.  
 Berisi pengalaman kerja, proyek, dan informasi kontak saya sebagai **Data Scientist & Software Engineer**.
